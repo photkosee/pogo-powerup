@@ -2,9 +2,20 @@ import { useState } from "react";
 import reactLogo from "./assets/react.svg";
 import viteLogo from "/vite.svg";
 import "./App.css";
+import calculate from "./calculate";
 
 function App() {
   const [count, setCount] = useState(0);
+
+  console.log(
+    calculate({
+      startingLevel: 1,
+      targetLevel: 100,
+      isLucky: false,
+      isShadow: false,
+      isPurified: false,
+    })
+  );
 
   return (
     <>

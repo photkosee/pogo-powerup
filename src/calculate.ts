@@ -20,7 +20,7 @@ const calculate = ({
   if (isShadow) {
     // All costs of a shadow pokemon are 1.2 times more expensive (rounded up)
     // On each power up
-    for (let i = startingLevel; i < targetLevel; i++) {
+    for (let i = startingLevel; i <= targetLevel; i++) {
       candy += Math.ceil(candyToNextLevel(i) * 1.2);
       xl += Math.ceil(xlToNextLevel(i) * 1.2);
       stardust += Math.ceil(stardustToNextLevel(i) * 1.2);
@@ -52,38 +52,39 @@ const calculate = ({
 }
 
 const candyToNextLevel = (level: number) => {
-  if (level <= 20) {
+  if (level < 21) {
     return 1;
-  } else if (level <= 40) {
+  } else if (level < 41) {
     return 2;
-  } else if (level <= 50) {
+  } else if (level < 51) {
     return 3;
-  } else if (level <= 60) {
+  } else if (level < 61) {
     return 4;
-  } else if (level <= 64) {
+  } else if (level < 65) {
     return 6;
-  } else if (level <= 68) {
+  } else if (level < 69) {
     return 8;
-  } else if (level <= 75) {
+  } else if (level < 73) {
     return 10;
-  } else if (level <= 76) {
+  } else if (level < 77) {
     return 12;
-  } else if (level <= 80) {
+  } else if (level < 79) {
     return 15;
   } else {
     return 0;
   }
 }
 
+// XL candy required to power up from given level to the next
 const xlToNextLevel = (level: number) => {
-  if (level < 80) return 0;
-  if (level <= 82) {
+  if (level < 79 || level > 98) return 0;
+  if (level < 83) {
     return 10;
-  } else if (level <= 86) {
+  } else if (level < 87) {
     return 12;
-  } else if (level <= 90) {
+  } else if (level < 91) {
     return 15;
-  } else if (level <= 94) {
+  } else if (level < 95) {
     return 17;
   } else {
     return 20;
@@ -97,7 +98,8 @@ const stardustToNextLevel = (level: number) => {
   let index: number = 0;
   let count: number = 1;
 
-  for (let i = 4; i <= level; i += 4) {
+  if (level > 98) return 0;
+  for (let i = 4; i < 100; i += 4) {
     if (level <= i) break;
 
     multiplier += increment[index];
