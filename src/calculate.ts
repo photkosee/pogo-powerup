@@ -18,12 +18,16 @@ const calculate = ({
   let stardust: number = 0;
 
   if (isShadow) {
+    // All costs of a shadow pokemon are 1.2 times more expensive (rounded up)
+    // On each power up
     for (let i = startingLevel; i < targetLevel; i++) {
       candy += Math.ceil(candyToNextLevel(i) * 1.2);
       xl += Math.ceil(xlToNextLevel(i) * 1.2);
       stardust += Math.ceil(stardustToNextLevel(i) * 1.2);
     }
   } else if (isPurified) {
+    // All costs of a purified pokemon are 10% cheaper (rounded up)
+    // On each power up
     for (let i = startingLevel; i < targetLevel; i++) {
       candy += Math.ceil(candyToNextLevel(i) * 0.9);
       xl += Math.ceil(xlToNextLevel(i) * 0.9);
@@ -37,6 +41,7 @@ const calculate = ({
     }
   }
 
+  // Stardust cost is halved for lucky pokemons
   if (isLucky) stardust /= 2;
 
   return {
@@ -90,7 +95,7 @@ const stardustToNextLevel = (level: number) => {
   const increment: number[] = [2, 3, 5, 10];
   let multiplier: number = 2;
   let index: number = 0;
-  let count: number = 0;
+  let count: number = 1;
 
   for (let i = 4; i <= level; i += 4) {
     if (level <= i) break;
@@ -105,58 +110,6 @@ const stardustToNextLevel = (level: number) => {
   }
 
   return baseStardust * multiplier;
-
-  // if (level <= 5) {
-  //   return baseStardust * 2
-  // } else if (level <= 9) {
-  //   return baseStardust * 4;
-  // } else if (level <= 13) {
-  //   return baseStardust * 6;
-  // } else if (level <= 17) {
-  //   return baseStardust * 8;
-  // } else if (level <= 21) {
-  //   return baseStardust * 10;
-  // } else if (level <= 25) {
-  //   return baseStardust * 13;
-  // } else if (level <= 29) {
-  //   return baseStardust * 16;
-  // } else if (level <= 33) {
-  //   return baseStardust * 19;
-  // } else if (level <= 37) {
-  //   return baseStardust * 22;
-  // } else if (level <= 41) {
-  //   return baseStardust * 25;
-  // } else if (level <= 45) {
-  //   return baseStardust * 30;
-  // } else if (level <= 49) {
-  //   return baseStardust * 35;
-  // } else if (level <= 53) {
-  //   return baseStardust * 40;
-  // } else if (level <= 57) {
-  //   return baseStardust * 45;
-  // } else if (level <= 61) {
-  //   return baseStardust * 50;
-  // } else if (level <= 65) {
-  //   return baseStardust * 60;
-  // } else if (level <= 69) {
-  //   return baseStardust * 70;
-  // } else if (level <= 73) {
-  //   return baseStardust * 80;
-  // } else if (level <= 77) {
-  //   return baseStardust * 90;
-  // } else if (level <= 81) {
-  //   return baseStardust * 100;
-  // } else if (level <= 85) {
-  //   return baseStardust * 110;
-  // } else if (level <= 89) {
-  //   return baseStardust * 120;
-  // } else if (level <= 93) {
-  //   return baseStardust * 130;
-  // } else if (level <= 97) {
-  //   return baseStardust * 140;
-  // } else if (level <= 100) {
-  //   return baseStardust * 150;
-  // }
 }
 
 export default calculate;
