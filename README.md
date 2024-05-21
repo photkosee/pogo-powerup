@@ -1,6 +1,4 @@
-<p align="center"><a href=""><img width="55" src="./public/candy.png"></a></p>
-
-# <p align="center"><a href="">POGO - Power Up</a></p>
+# <p align="center"><a href=""><img width="230" src="./public/pogo.png"></a></p>
 
 <p align="center">Easily calculate and plan out your resources for powering up your pokemons with this tool. <a href="">Try this out now!</a></p>
 
