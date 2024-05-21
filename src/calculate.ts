@@ -51,6 +51,7 @@ const calculate = ({
   }
 }
 
+// Candies required to power up from given level to the next
 const candyToNextLevel = (level: number) => {
   if (level < 21) {
     return 1;
@@ -75,7 +76,7 @@ const candyToNextLevel = (level: number) => {
   }
 }
 
-// XL candy required to power up from given level to the next
+// XL candies required to power up from given level to the next
 const xlToNextLevel = (level: number) => {
   if (level < 79 || level > 98) return 0;
   if (level < 83) {
@@ -91,6 +92,7 @@ const xlToNextLevel = (level: number) => {
   } 
 }
 
+// Stardust required to power up from given level to the next
 const stardustToNextLevel = (level: number) => {
   const baseStardust: number = 100;
   const increment: number[] = [2, 3, 5, 10];
