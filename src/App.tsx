@@ -9,9 +9,9 @@ function App() {
       >
         <div
           className="w-full h-full sm:h-max bg-[#fffdf5] flex flex-col justify-center my-auto
-          gap-y-9 sm:rounded-3xl sm:shadow-2xl max-w-5xl pt-3 sm:py-7 lg:py-10"
+          gap-y-5 sm:rounded-3xl sm:shadow-2xl max-w-3xl pt-3 sm:py-5 lg:py-7"
         >
-          <img src="/pogo.png" className="h-40 mx-auto" />
+          <img src="./public/pogo.png" className="h-24 mx-auto" />
           <Calculator />
         </div>
       </div>

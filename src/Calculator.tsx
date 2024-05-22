@@ -54,7 +54,7 @@ const Calculator = () => {
   return (
     <div className="h-full flex flex-col items-center gap-y-5">
       <div
-        className="flex flex-col gap-y-3 sm:gap-y-5 w-full px-10
+        className="flex flex-col gap-y-3 w-full px-10
         justify-center items-center"
       >
         <Slider
@@ -127,16 +127,16 @@ const Calculator = () => {
           <p className="font-semibold text-white text-xl lg:text-2xl">
             Power up Costs
           </p>
-          <div className="w-full bg-white flex rounded-xl p-3 gap-x-5 items-center">
-            <img src="/candy.png" className="w-7" />
+          <div className="w-full bg-white flex rounded-xl px-3 py-2 gap-x-5 items-center">
+            <img src="./public/candy.png" className="w-7" />
             {candy}
           </div>
-          <div className="w-full bg-white flex rounded-xl p-3 gap-x-5 items-center">
-            <img src="/xl.png" className="w-7" />
+          <div className="w-full bg-white flex rounded-xl px-3 py-2 gap-x-5 items-center">
+            <img src="./public/xl.png" className="w-7" />
             {xl}
           </div>
-          <div className="w-full bg-white flex rounded-xl p-3 gap-x-5 items-center">
-            <img src="/stardust.png" className="w-7" />
+          <div className="w-full bg-white flex rounded-xl px-3 py-2 gap-x-5 items-center">
+            <img src="./public/stardust.png" className="w-7" />
             {stardust}
           </div>
         </div>

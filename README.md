@@ -1,6 +1,6 @@
-# <p align="center"><a href=""><img width="230" src="./public/pogo.png"></a></p>
+# <p align="center"><a href="https://photkosee.github.io/pogo-powerup/"><img width="230" src="./public/pogo.png"></a></p>
 
-<p align="center">Easily calculate and plan out your resources for powering up your pokemons with this tool. <a href="">Try this out now!</a></p>
+<p align="center">Easily calculate and plan out your resources for powering up your pokemons with this tool. <a href="https://photkosee.github.io/pogo-powerup/">Try this out now!</a></p>
 
 ## Feature
 - Calculating the amount of stardust and candies required to power up your pokemon form its current level to your target level
