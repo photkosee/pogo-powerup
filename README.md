@@ -124,6 +124,7 @@ This table shows the Stardust, Candy, and XL Candy costs for powering up your Po
 - [Vite 5](https://vitejs.dev/) - Build tool
 - [React 18](https://react.dev/) - Development environment
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
+- [Ant Design](https://ant.design/) - Components library
 
 ## Contributing
 
