@@ -20,7 +20,7 @@ const calculate = ({
   if (isShadow) {
     // All costs of a shadow pokemon are 1.2 times more expensive (rounded up)
     // On each power up
-    for (let i = startingLevel; i <= targetLevel; i++) {
+    for (let i = startingLevel; i < targetLevel; i++) {
       candy += Math.ceil(candyToNextLevel(i) * 1.2);
       xl += Math.ceil(xlToNextLevel(i) * 1.2);
       stardust += Math.ceil(stardustToNextLevel(i) * 1.2);
