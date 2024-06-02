@@ -18,7 +18,7 @@ function App() {
         </div>
       </div>
       <FloatButton
-        href="https://github.com/photkosee"
+        href="https://github.com/photkosee/pogo-powerup"
         target="_blank"
         badge={{ dot: true }}
         icon={<GithubOutlined />}

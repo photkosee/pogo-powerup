@@ -126,6 +126,11 @@ This table shows the Stardust, Candy, and XL Candy costs for powering up your Po
 - [Tailwind CSS](https://tailwindcss.com/) - CSS framework
 - [Ant Design](https://ant.design/) - Components library
 
+## Author
+Phot Koseekrainiramon
+- [LinkedIn](https://www.linkedin.com/in/phot-kosee/)
+- [GitHub](https://github.com/photkosee)
+
 ## Contributing
 
 Pull requests are welcome. Please open an issue first to discuss what you'd like to improve or any bug you'd like to fix.
