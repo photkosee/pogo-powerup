@@ -2,9 +2,19 @@
 
 <p align="center">Easily calculate and plan out your resources for powering up your pokemons with this tool. <a href="https://photkosee.github.io/pogo-powerup/">Try this out now!</a></p>
 
-## Feature
-- Calculating the amount of stardust and candies required to power up your pokemon form its current level to your target level
-- The costs of regular, shadow, purified, and lucky pokemons are all covered
+### Table of Contents
+
+1. [What this does?](#what-this-does)
+2. [Note](#note)
+3. [Costs by Level](#costs-by-level)
+4. [Built with](#built-with)
+5. [Author](#author)
+6. [Deployment](#deployment)
+7. [Contributing](#contributing)
+
+## What this does?
+
+This tool will calculate the amount of stardust and candies required to power up your pokemon form its current level to your target level which will cover the costs of the pokemon being regular, shadow, purified, and lucky pokemons.
 
 ## Note
 
@@ -127,9 +137,16 @@ This table shows the Stardust, Candy, and XL Candy costs for powering up your Po
 - [Ant Design](https://ant.design/) - Components library
 
 ## Author
+
 Phot Koseekrainiramon
 - [LinkedIn](https://www.linkedin.com/in/phot-kosee/)
 - [GitHub](https://github.com/photkosee)
+
+## Deployment
+
+This project is deployed to GitHub Pages:
+
+[https://photkosee.github.io/pogo-powerup/](https://photkosee.github.io/pogo-powerup/)
 
 ## Contributing
 
