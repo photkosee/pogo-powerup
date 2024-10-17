@@ -1,16 +1,16 @@
-# <p align="center"><a href="https://photkosee.github.io/pogo-powerup/"><img width="230" src="./public/pogo.png"></a></p>
+# <p align="center"><a href="https://photkosee.github.io/pogo-powerup/"><img width="170" src="./public/pogo.png"></a></p>
 
 <p align="center">Easily calculate and plan out your resources for powering up your pokemons with this tool. <a href="https://photkosee.github.io/pogo-powerup/">Try this out now!</a></p>
 
-### Table of Contents
+## Table of Contents
 
-1. [What this does?](#what-this-does)
-2. [Note](#note)
-3. [Costs by Level](#costs-by-level)
-4. [Built with](#built-with)
-5. [Author](#author)
-6. [Deployment](#deployment)
-7. [Contributing](#contributing)
+- [What this does?](#what-this-does)
+- [Note](#note)
+- [Costs by Level](#costs-by-level)
+- [Built with](#built-with)
+- [Author](#author)
+- [Deployment](#deployment)
+- [Contributing](#contributing)
 
 ## What this does?
 
@@ -139,7 +139,7 @@ This table shows the Stardust, Candy, and XL Candy costs for powering up your Po
 ## Author
 
 Phot Koseekrainiramon
-- [LinkedIn](https://www.linkedin.com/in/phot-kosee/)
+- [LinkedIn](https://www.linkedin.com/in/photkosee/)
 - [GitHub](https://github.com/photkosee)
 
 ## Deployment
